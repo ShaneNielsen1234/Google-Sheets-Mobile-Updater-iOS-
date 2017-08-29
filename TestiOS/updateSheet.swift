@@ -25,6 +25,7 @@ class updateSheet: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
     // resetting the iOS simulator or uninstall the app.
     private let scopes = [kGTLRAuthScopeSheetsSpreadsheets]
 
+    //private let driveService = GTLRDriveService()
     private let service = GTLRSheetsService()
     
     
@@ -46,13 +47,12 @@ class updateSheet: UIViewController, GIDSignInDelegate, GIDSignInUIDelegate {
             self.service.authorizer = nil
         } else {
             self.service.authorizer = user.authentication.fetcherAuthorizer()
-            
         }
     }
     
     // Display (in the UITextView) the names and majors of students in a sample
     // spreadsheet:
-    // https://docs.google.com/spreadsheets/d/1Si947bEdeRHZDJGEWW29D-uzfZj7fufynwuc6danFSo/edit
+    // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
     func updateSheet() {
         label.text = "Getting sheet data..."
         let spreadsheetId = "1Si947bEdeRHZDJGEWW29D-uzfZj7fufynwuc6danFSo" //"1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms"
