@@ -10,3 +10,13 @@ This app adds the following functionality:
 - Works on iOS 11. 
 
 
+INSTALL:
+Follow directions in above link (https://developers.google.com/sheets/api/quickstart/ios?ver=swift)
+But basically:
+- Use my PODFILE, and run pod install in directory
+- Open TestiOS.xcworkspace
+- Turn on Sheets API
+- Add url from GoogleService-Info.plist (Obsolete one is in correct place under URL in the info section of the project in xcode)
+- Modify, Compile, and Run. 
+
+
