@@ -1,6 +1,6 @@
 # Google-Sheets-Mobile-Updater-iOS-
 
-Works off of the example code presented here: https://developers.google.com/sheets/api/quickstart/ios?ver=swift
+Builds upon the example code presented here: https://developers.google.com/sheets/api/quickstart/ios?ver=swift
 
 This app adds the following functionality:
 - Seperate window for sign in. Moves to next ViewController at start on succesful login.
